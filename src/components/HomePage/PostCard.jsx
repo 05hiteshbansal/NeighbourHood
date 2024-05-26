@@ -12,12 +12,12 @@ const PostCard = () => {
   const image1 = {
     hidden: {
       opacity: 0,
-      x: "-100px",
-      y:"-100px"
+      x: "100px",
+      y:"100px"
     },
     visible: {
       opacity: 1,
-      x: 50,
+      x:-50,
       y:50,
       transition: {
         type: "spring",
@@ -38,12 +38,12 @@ const PostCard = () => {
   const image2 = {
     hidden: {
       opacity: 0,
-      x: "100px",
-      y:"100px"
+      x:"-100px",
+      y:"-100px"
     },
     visible: {
       opacity: 1,
-      x: -50,
+      x:50,
       y:-50,
       transition: {
         type: "spring",
