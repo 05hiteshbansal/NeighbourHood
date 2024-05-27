@@ -5,9 +5,9 @@ const Card = ({imgurl , title , dis}) => {
   return (
     <>
         <section className="text-gray-600 flex items-center body-font min-w-[100vw] h-[100vh] ">
-  <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
-    <div className=" w-full h-full md:mb-0">
-      <Image  className=" rounded object-cover" alt="hero" src={imgurl}
+  <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col justify-center items-center h-full w-full">
+    <div className=" w-full h-full md:mb-0 flex items-center justify-center ">
+      <Image  className=" rounded object-cover object-center h-full w-full " alt="hero" src={imgurl}
          height={imgurl.height}
           width={imgurl.width}
       />
