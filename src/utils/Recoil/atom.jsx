@@ -17,6 +17,7 @@
       "country":"",
       "state":"",
       "city":"",
-      "pincode":""
+      "pincode":"",
+      "imageurl":"",
     }, // default value (aka initial value)
   });

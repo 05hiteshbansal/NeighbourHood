@@ -19,8 +19,8 @@ const data=[
     <div>
     <p className=' text-black '> Your Near Neighbours</p>
       <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap m-4 items-center justify-center">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-wrap m-4 items-center justify-center">
     {data.map((d ,index)=>(
       <div key={index} className=' flex flex-row m-4  sm:w-full md:w-1/2 lg:w-1/4  '>
         <ProfileCard  name={d.name} bio={d.bio} imgurl={d.imgurl} distance={d.distance}/>
