@@ -1,7 +1,8 @@
 import { SignIn } from "@clerk/nextjs";
 import React from 'react'
 import Image from 'next/image'
-import img from '@/media/login.jpg'
+import img from '@/media/Login.jpg'
+
 
   const page = () => {
   return (
