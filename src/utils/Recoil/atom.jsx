@@ -19,5 +19,7 @@
       "city":"",
       "pincode":"",
       "imageurl":"",
+      "longitute":"",
+      "latitute":""
     }, // default value (aka initial value)
   });

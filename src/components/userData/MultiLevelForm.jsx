@@ -12,7 +12,7 @@ export default function MultiStepPage() {
     },
     {
       number: 3,
-      title: "Upload & Check",
+      title: "Upload",
     },
     {
       number: 4,
