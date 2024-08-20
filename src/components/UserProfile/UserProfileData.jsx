@@ -40,7 +40,7 @@ const UserProfileData = () => {
     <>
      <Toaster />   
       <div className=" w-full min-h-screen flex justify-center pt-5 ">
-        <form className="w-2/5  items-center flex flex-col">
+        <form className="w-4/5 items-center flex flex-col">
           <div className=" w-[200px] h-[200px] overflow-hidden rounded-full border-5 border-slate-300 relative ">
             <Image width={500} height={500} alt="no" src={imageurl} />
           </div>

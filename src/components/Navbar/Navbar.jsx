@@ -2,9 +2,11 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import {Button} from "@nextui-org/react";
 import { SignInButton ,SignOutButton ,UserButton ,useClerk, useUser } from '@clerk/nextjs'
 const Navbar = () => {
 const {isSignedIn , user}=useUser();
+const router = useRouter();
 const {signOut}=useClerk();
   return (
     <header className="text-slate-300 body-font bg-black">
@@ -18,20 +20,28 @@ const {signOut}=useClerk();
     
 {isSignedIn?(
   <div className=' flex gap-2 p-5'>
-        <Link href={'/profile'}>Profile</Link>
-        <Link href={'/dashboard'}>Dashboard</Link>
+        <Button onClick={()=>{router.push('/profile')}} color="secondary">
+        Profile
+      </Button>
+      <Button onClick={()=>{router.push('/dashboard')}} color="secondary">
+        Dashboard
+      </Button>
         <UserButton/>
   </div>
 ):(
   <div className=' flex gap-2 p-5 '>
-  <Link href={'/sign-in'} className="inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0">SignIn<svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+  <Button onClick={()=>{router.push('/sign-in')}} color="secondary">
+        SignIn
+        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
-    </Link>
-    <Link href={'/sign-up'} className="inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0">SignUp<svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+      </Button>
+    <Button onClick={()=>{router.push('/sign-up')}} color="secondary">
+        Sign-Up
+        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
-    </Link>
+      </Button>
   </div>
 )}
 

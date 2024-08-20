@@ -165,7 +165,6 @@ const Upload = () => {
           Get coordinates
         </Button>
       </form>
-
       <div onClick={submit}>
         <NavButtons />
       </div>

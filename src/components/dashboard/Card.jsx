@@ -5,10 +5,9 @@ import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import Image from 'next/image';
 //import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
-
 export default function ProfileCard({name,imgurl,bio}) {
   return (
-    <Card sx={{ minHeight: '500px', width: 400 }}>
+    <Card sx={{ minHeight: '500px'}}>
       <CardCover>
         <Image
           src={imgurl}
@@ -34,3 +33,11 @@ export default function ProfileCard({name,imgurl,bio}) {
     </Card>
   );
 }
+
+
+
+
+
+
+
+

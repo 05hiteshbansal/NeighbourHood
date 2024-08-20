@@ -34,7 +34,7 @@ const Hero = () => {
     <>
       <div className="relative max-w-full h-screen  bg-black overflow-hidden">
         <motion.div
-          className=" bg-white w-[500px] h-[500px] top-0 absolute z-20 rounded-full mix-blend-overlay bg-blend-difference "
+          className=" bg-white lg:w-[500px] lg:h-[500px]  top-0 absolute z-20 rounded-full mix-blend-overlay bg-blend-difference "
           
           animate={{
             x: mousePos.x - 250,
@@ -51,9 +51,9 @@ const Hero = () => {
           src={urls}
         />
         <div className=" flex flex-col font-serif text-6xl relative z-21 justify-center items-center h-full w-full ">
-        <div className="flex flex-col font-serif w-3/5 text-6xl justify-center items-center p-20 rounded-sm backdrop-contrast-[.80] gap-4">
-          <div className=" text-[100px]">Neighborgood</div>
-          <div className=" text-[20px] text-wrap">Neighborgood it is a mission to provide simple platform for Neighborgood to form connections and communities .We are achieveing this by creating a AI chart-Bot </div>
+        <div className="flex flex-col font-serif w-full lg:w-3/5 text-6xl justify-center items-center p-20 rounded-sm backdrop-contrast-[.80] gap-4">
+          <div className=" lg:text-[100px] text-[50px]  ">Neighborgood</div>
+          <div className=" text-[20px]  text-wrap">Neighborgood it is a mission to provide simple platform for Neighborgood to form connections and communities .We are achieveing this by creating a AI chart-Bot </div>
           <button className=" p-5 text-[20px] bg-yellow-500  text-zinc-900"> Get Started </button>
           {/* <div>Logo</div> */}
         </div>
