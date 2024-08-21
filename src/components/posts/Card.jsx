@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Card = ({ userid, bio, postimage, userimage, title ,name }) => {
   return (
@@ -13,9 +14,9 @@ const Card = ({ userid, bio, postimage, userimage, title ,name }) => {
           width={48}  // Adjusted width and height to match tailwind classes
           height={48}
         />
-        <div>
+        <Link href={`/dashboard/people/${userid}`}>
           <h3 className="text-lg text-black font-semibold">{name}</h3>
-        </div>
+        </Link>
       </div>
 
       {/* Post Content */}

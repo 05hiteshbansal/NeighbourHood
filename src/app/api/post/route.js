@@ -18,9 +18,10 @@ export async function POST(req) {
     title:data.Title,
     eventImage:data.postimage,
     userImage:userData.imageurl,
-    name:userData.name
     }
     postData["bio"]=data.Detail;
+    postData["name"]=userData.name;
+
 let final;
     if(data.event==="Feeds"){
         final = await Post.create(postData)

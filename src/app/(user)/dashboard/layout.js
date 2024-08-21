@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
   return (
     <div className="min-h-screen flex flex-row bg-[#FFFBF5]">
     <aside className="w-1/5 bg-white p-6 shadow-lg">
-        <nav className="space-y-4">
+        <nav className="space-y-4 min-w-4">
           <Link href="/dashboard" className="block text-gray-700 font-semibold">
             People
           </Link>

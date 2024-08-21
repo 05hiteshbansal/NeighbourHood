@@ -36,7 +36,26 @@ export default function ProfileCard({name,imgurl,bio}) {
 
 
 
+// import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
 
+// export default function ProfileCard({name, imgurl, bio}) {
+//   return (
+//     <Card className="py-4 flex items-center justify-center">
+//         <Image
+//           alt="Card background"
+//           className="object-cover w-full h-[300px] rounded-xl"
+//           src={imgurl}
+//           width={270}
+//         />
+//       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+//         <p className="text-tiny uppercase font-bold">{name}</p>
+//         <small className="text-default-500">{bio}</small>
+//       </CardHeader>
+//       <CardBody className="overflow-visible py-2">
+//       </CardBody>
+//     </Card>
+//   );
+// }
 
 
 
