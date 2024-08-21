@@ -9,29 +9,29 @@ const page = async() => {
   const email=user.emailAddresses[0].emailAddress;
   return (
     <div className=' flex lg:flex-row flex-col items-center justify-center '>
-    <div className=' w-1/2'>
+    <div className=' md:w-1/2 w-full'>
     <UserProfileData/>
     </div>
-    {/* <div className=' text-gray-100'>
-    <div className=' flex flex-col items-center justify-center'> */}
-      {/* <div>|</div>
-      <div>|</div>
-      <div>|</div>
-      <div>|</div>
-      <div>|</div>
-    </div>
-    or
-    <div className=' flex flex-col items-center justify-center'>
+    <div className=' text-gray-100'>
+    {/* <div className=' flex flex-col items-center justify-center'>
       <div>|</div>
       <div>|</div>
       <div>|</div>
       <div>|</div>
       <div>|</div>
-    </div>
     </div> */}
+    or
+    {/* <div className=' flex flex-col items-center justify-center'>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+    </div> */}
+    </div>
 
     <Divider orientation="vertical" />
-    <div className=' w-1/2'>
+    <div className=' md:w-1/2 w-full '>
     <CreatePost email={email}/>
     </div>
     </div>
