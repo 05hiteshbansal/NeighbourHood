@@ -52,7 +52,7 @@ const Hero = () => {
         />
         <div className=" flex flex-col font-serif text-6xl relative z-21 justify-center items-center h-full w-full ">
         <div className="flex flex-col font-serif w-full lg:w-3/5 text-6xl justify-center items-center p-20 rounded-sm backdrop-contrast-[.80] gap-4">
-          <div className=" lg:text-[100px] text-[50px]  ">Neighborgood</div>
+          <div className=" lg:text-[100px] text-[50px]  ">Neighbourhood</div>
           <div className=" text-[20px]  text-wrap">Neighborgood it is a mission to provide simple platform for Neighborgood to form connections and communities .We are achieveing this by creating a AI chart-Bot </div>
           <button className=" p-5 text-[20px] bg-yellow-500  text-zinc-900"> Get Started </button>
           {/* <div>Logo</div> */}
